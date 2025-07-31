@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hover Background Animation</title>
+    <style>
+      .animated-div {
+        width: 200px;
+        height: 50px;
+        background: linear-gradient(to right, #2196f3 50%, #ffffff 50%);
+        background-size: 200% 100%;
+        background-position: right;
+        transition: background-position 1s ease;
+        border-radius: 8px;
+        transition-property: color, background-color, border-color,
+          text-decoration-color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+
+      .animated-div:hover {
+        background-position: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animated-div">HOME</div>
+  </body>
+</html>

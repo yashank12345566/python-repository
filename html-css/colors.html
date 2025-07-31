@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colors Types</title>
+    <style>
+      .col1 {
+        height: 100px;
+        background-color: lightskyblue;
+      }
+      .col2 {
+        height: 100px;
+        background-color: rgb(75, 29, 184);
+      }
+      .col3 {
+        height: 100px;
+        background-color: #1f70d3;
+      }
+      .col4 {
+        height: 100px;
+        background: linear-gradient(
+          to right bottom,
+          blue 30%,
+          lightskyblue 50%,
+          gray 20%
+        );
+        background-image: radial-gradient(
+          circle,
+          lightgreen 30%,
+          lightpink 50%,
+          lightgray 20%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <h1>1. Color Names</h1>
+    <div class="col1"></div>
+    <h1>2. RGB color code - rgb() function</h1>
+    <h3>rgb(r,g,b) => values : 0-255</h3>
+    <div class="col2"></div>
+    <h1>3. Hexadecimal color code - hex = 6, deci = 10 => 16</h1>
+    <h3>#RRGGBB or #RGB : values : 0-9 & A,B,C,D,E,F</h3>
+    <div class="col3"></div>
+
+    <hr />
+    <h1>Gradient colors</h1>
+    <h3>Website : cssgradient.io</h3>
+    <div class="col4"></div>
+  </body>
+</html>
