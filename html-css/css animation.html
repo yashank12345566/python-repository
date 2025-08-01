@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        animation: my-animation 5s linear 2s infinite alternate;
+        /* animation-name: my-animation;
+        animation-duration: 5s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out; */
+        /* animation-fill-mode: backwards; */
+        /* animation : name duration timing-function delay iteration-count direction */
+      }
+
+      @keyframes my-animation {
+        from {
+          background-color: red;
+          margin-left: 400px;
+        }
+        to {
+          background-color: blue;
+        }
+      }
+
+      .test {
+        position: relative;
+        width: 40%;
+        animation: move-person 10s linear 0s infinite normal;
+      }
+
+      @keyframes move-person {
+        0% {
+          left: 0%;
+        }
+        25% {
+          left: 70%;
+        }
+        50% {
+          top: 300px;
+          width: 60%;
+        }
+        75% {
+          left: 0px;
+          top: 300px;
+        }
+        100% {
+          top: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <hr />
+
+    <img
+      src="https://cdn.dribbble.com/users/3484830/screenshots/17005456/walk-cycle-animation.gif"
+      alt=""
+      class="test"
+    />
+  </body>
+</html>
